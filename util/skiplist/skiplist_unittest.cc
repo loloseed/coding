@@ -3,7 +3,7 @@
 #include "skiplist-inl.h"
 #include "third_party/gtest/include/gtest/gtest.h"
 
-using util::Skiplist;
+using util::skiplist::Skiplist;
 TEST(Skiplist, TEST_INTERFACE) {
   Skiplist<int, int> skiplist;
   EXPECT_EQ(0, skiplist.size());

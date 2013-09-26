@@ -7,6 +7,8 @@
 #include <utility>
 
 namespace util {
+namespace skiplist {
+const int kLevelProbability = RAND_MAX / 2;
 /**
  * 类似于map的有序集合类型，每个集合元素是key-value对，使用skiplist结构实现。
  */
@@ -295,7 +297,9 @@ void Skiplist<KeyType, ValueType, Comparator>::swap(Skiplist& other) {
 // 初始为1层，每次以1/2的概率递增一层，最高为kMaxLevel层
 template <typename KeyType, typename ValueType, typename Comparator>
 size_t Skiplist<KeyType, ValueType, Comparator>::GenerateRandomLevel() {
-  size_t
+  size_t level = 1;
+  while (rand()
+  return level;
 }
 
 template <typename KeyType, typename ValueType, typename Comparator>
@@ -419,5 +423,6 @@ class Skiplist<KeyType, ValueType, Comparator>::IteratorBase {
  private:
   Skiplist<KeyType, ValueType, Comparator>::Node* curr_node_;
 };
+}  // namespace skiplist
 }  // namespace util
 #endif  // UTIL_SKIPLIST_H_
