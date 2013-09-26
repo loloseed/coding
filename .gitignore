@@ -12,3 +12,4 @@ install-sh
 configure
 missing
 skiplist_unittest
+*.swp
