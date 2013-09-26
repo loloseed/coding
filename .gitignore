@@ -1,0 +1,14 @@
+*.[o]
+Makefile
+config.log
+config.status
+Makefile.in
+aclocal.m4
+autom4te.cache/
+depcomp
+ltmain.sh
+install-sh
+.deps/
+configure
+missing
+skiplist_unittest

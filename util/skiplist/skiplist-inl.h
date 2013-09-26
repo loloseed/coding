@@ -192,17 +192,17 @@ Skiplist<KeyType, ValueType, Comparator>::operator= (const Skiplist& other) {
 }
 
 template <typename KeyType, typename ValueType, typename Comparator>
-std::pair<Skiplist<KeyType, ValueType, Comparator>::iterator, bool>
+std::pair<typename Skiplist<KeyType, ValueType, Comparator>::iterator, bool>
 Skiplist<KeyType, ValueType, Comparator>::insert(const KeyType& key, const ValueType& value) {
 }
 
 template <typename KeyType, typename ValueType, typename Comparator>
-Skiplist<KeyType, ValueType, Comparator>::iterator
+typename Skiplist<KeyType, ValueType, Comparator>::iterator
 Skiplist<KeyType, ValueType, Comparator>::find(const KeyType& key) {
 }
 
 template <typename KeyType, typename ValueType, typename Comparator>
-Skiplist<KeyType, ValueType, Comparator>::const_iterator
+typename Skiplist<KeyType, ValueType, Comparator>::const_iterator
 Skiplist<KeyType, ValueType, Comparator>::find(const KeyType& key) const {
 }
 

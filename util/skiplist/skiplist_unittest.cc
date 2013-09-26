@@ -1,4 +1,7 @@
 #include "skiplist-inl.h"
-int main() {
-  return 0;
+#include "third_party/gtest/include/gtest/gtest.h"
+
+TEST(Skiplist, Construct) {
+  bool ret = false;
+  EXPECT_EQ(true, ret);
 }
